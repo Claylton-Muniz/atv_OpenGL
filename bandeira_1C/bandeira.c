@@ -48,13 +48,12 @@ void display() {
     glColor3f(rgb(36), rgb(50), rgb(113));
     circulo(144, 81, 42, 100);
 
-    glLineWidth(8);
     glColor3f(1, 1, 1);
-    glBegin(GL_LINES);
-        glVertex2f(102, 79);
-        glVertex2f(186, 79);
-        glVertex2f(102, 83);
-        glVertex2f(186, 83);
+    glBegin(GL_QUADS);
+        glVertex2f(102, 77);
+        glVertex2f(102, 85);
+        glVertex2f(186, 85);
+        glVertex2f(186, 77);
     glEnd();
 
     glColor3f(rgb(25), rgb(172), rgb(102));
@@ -73,7 +72,7 @@ void display() {
         glVertex2f(165, 62);
         glVertex2f(170, 66);
         glVertex2f(158, 90);
-        glVertex2f(144, 81);
+        glVertex2f(144, 90);
     glEnd();
 
     glFlush();
